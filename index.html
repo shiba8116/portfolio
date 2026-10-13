@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiba Yadav - Aspiring Full Stack Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+   <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 w-full bg-slate-950/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-slate-800 z-50 transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-code text-cyan-400 font-bold text-lg">&lt;Shiba Yadav /&gt;</a>
+            <div class="flex items-center gap-4">
+                <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
+                    <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                    <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+                    <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
+                    <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+                </nav>
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="p-2 rounded-lg text-slate-400 hover:text-cyan-400 hover:bg-slate-900 transition-all focus:outline-none" aria-label="Toggle theme">
+                    <i id="theme-icon" class="fa-solid fa-sun text-lg"></i>
+                </button>
+                <button id="menu-btn" class="md:hidden text-xl text-slate-300 focus:outline-none" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 flex flex-col gap-4 text-slate-300">
+            <a href="#about" class="mobile-link hover:text-cyan-400">About</a>
+            <a href="#projects" class="mobile-link hover:text-cyan-400">Projects</a>
+            <a href="#skills" class="mobile-link hover:text-cyan-400">Skills</a>
+            <a href="#contact" class="mobile-link hover:text-cyan-400">Contact</a>
+        </div>
+    </header>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 flex flex-col gap-4 text-slate-300">
+            <a href="#about" class="mobile-link hover:text-cyan-400">About</a>
+            <a href="#projects" class="mobile-link hover:text-cyan-400">Projects</a>
+            <a href="#skills" class="mobile-link hover:text-cyan-400">Skills</a>
+            <a href="#contact" class="mobile-link hover:text-cyan-400">Contact</a>
+        </div>
+    </header>
+
+  
+    <!-- Hero Section -->
+    <section id="about" class="min-h-screen flex items-center justify-center px-6 pt-24 pb-12 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center w-full">
+            
+            <!-- Left Column: Bio & Details -->
+            <div class="md:col-span-7">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold mb-6">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    Ideal Institute of Engineering, Kalyani | B.Tech AIML (2028)
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4">
+                    Hi, I'm <span class="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">Shiba Yadav</span>
+                </h1>
+                <p class="text-xl font-semibold text-slate-400 mb-6">Aspiring Full Stack Developer | AI & DevOps</p>
+                <p class="text-slate-400 text-base sm:text-lg leading-relaxed mb-8">
+                    B.Tech Artificial Intelligence and Machine Learning undergraduate, expected to graduate in 2028, with hands-on experience building and deploying full-stack web applications using the MERN stack. Skilled in JavaScript, HTML, CSS, React.js, Node.js, Express.js, MongoDB, REST APIs, JWT authentication, CRUD operations, Git/GitHub, Vercel deployment, and Cloudinary integration.
+                </p>
+                <div class="flex flex-wrap gap-4 mb-8">
+                    <a href="#projects" class="px-6 py-3 rounded-lg bg-cyan-400 text-slate-950 font-semibold hover:opacity-95 transition-all flex items-center gap-2">
+                        View Projects <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </a>
+                    <a href="mailto:shibayadav966@gmail.com" class="px-6 py-3 rounded-lg border border-slate-800 hover:border-cyan-400 hover:text-cyan-400 font-semibold transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+                <div class="flex gap-5 text-xl text-slate-400">
+                    <a href="https://github.com/shiba8116" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition-colors" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shiba-yadav-b75a78329?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition-colors" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:shibayadav966@gmail.com" class="hover:text-cyan-400 transition-colors" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Column: Profile Photo -->
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-2xl p-1 bg-gradient-to-tr from-cyan-500 to-indigo-500 shadow-2xl">
+                    <img src="assets/profile.jpg" alt="Shiba Yadav" class="w-full h-full object-cover rounded-2xl bg-slate-900">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tight mb-2">Featured Projects</h2>
+        <p class="text-slate-400 mb-12">Showcasing web applications and development milestones.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Project 1 -->
+            <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-6 hover:border-cyan-500/50 transition-all flex flex-col justify-between group">
+                <div>
+                    <div class="flex justify-between items-center mb-6">
+                        <i class="fa-solid fa-folder-open text-3xl text-cyan-400"></i>
+                        <div class="flex gap-3 text-slate-400 text-lg">
+                            <a href="https://github.com/shiba8116" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/shiba8116" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3 group-hover:text-cyan-400 transition-colors">Personal Developer Portfolio</h3>
+                    <p class="text-slate-400 text-sm mb-6">A modern, responsive developer portfolio styled with Tailwind CSS, featuring mobile navigation, clean typography, and a dark developer theme.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 font-code text-xs text-slate-400">
+                    <span class="bg-slate-800/80 px-2.5 py-1 rounded">HTML5</span>
+                    <span class="bg-slate-800/80 px-2.5 py-1 rounded">Tailwind CSS</span>
+                    <span class="bg-slate-800/80 px-2.5 py-1 rounded">JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-6 hover:border-cyan-500/50 transition-all flex flex-col justify-between group">
+                <div>
+                    <div class="flex justify-between items-center mb-6">
+                        <i class="fa-solid fa-folder-open text-3xl text-cyan-400"></i>
+                        <div class="flex gap-3 text-slate-400 text-lg">
+                            <a href="https://github.com/shiba8116" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/shiba8116" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3 group-hover:text-cyan-400 transition-colors">Full-Stack MERN Application</h3>
+                    <p class="text-slate-400 text-sm mb-6">Full-stack web app implementing REST APIs, JWT authentication, CRUD operations, and Cloudinary integration for media storage, deployed on Vercel.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 font-code text-xs text-slate-400">
+                    <span class="bg-slate-800/80 px-2.5 py-1 rounded">React.js</span>
+                    <span class="bg-slate-800/80 px-2.5 py-1 rounded">Node.js</span>
+                    <span class="bg-slate-800/80 px-2.5 py-1 rounded">Express.js</span>
+                    <span class="bg-slate-800/80 px-2.5 py-1 rounded">MongoDB</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6 bg-slate-900/30 border-y border-slate-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold tracking-tight mb-2">Technical Skills</h2>
+            <p class="text-slate-400 mb-12">Core technologies, tools, and platforms I work with.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Languages -->
+                <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-6">
+                    <h3 class="text-cyan-400 font-semibold mb-4">Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs px-3 py-1.5 rounded-lg">JavaScript</span>
+                        <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs px-3 py-1.5 rounded-lg">Java</span>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-6">
+                    <h3 class="text-cyan-400 font-semibold mb-4">Frontend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs px-3 py-1.5 rounded-lg">React</span>
+                        <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs px-3 py-1.5 rounded-lg">HTML5</span>
+                        <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs px-3 py-1.5 rounded-lg">CSS3</span>
+                        <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs px-3 py-1.5 rounded-lg">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-6">
+                    <h3 class="text-cyan-400 font-semibold mb-4">Backend & Databases</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs px-3 py-1.5 rounded-lg">Node.js</span>
+                        <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs px-3 py-1.5 rounded-lg">Express.js</span>
+                        <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs px-3 py-1.5 rounded-lg">RESTful APIs</span>
+                        <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs px-3 py-1.5 rounded-lg">MongoDB</span>
+                        <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs px-3 py-1.5 rounded-lg">MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-6">
+                    <h3 class="text-cyan-400 font-semibold mb-4">Tools & Platforms</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs px-3 py-1.5 rounded-lg">Git</span>
+                        <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs px-3 py-1.5 rounded-lg">GitHub</span>
+                        <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs px-3 py-1.5 rounded-lg">Postman</span>
+                        <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs px-3 py-1.5 rounded-lg">VS Code</span>
+                        <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs px-3 py-1.5 rounded-lg">Vercel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold tracking-tight mb-3">Get In Touch</h2>
+        <p class="text-slate-400 mb-8 max-w-md mx-auto">I'm currently seeking internship opportunities in Full-Stack development. Feel free to drop a message!</p>
+        <a href="mailto:shibayadav966@gmail.com" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg bg-cyan-400 text-slate-950 font-semibold hover:opacity-95 transition-all">
+            <i class="fa-solid fa-paper-plane text-sm"></i> Say Hello
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-900 text-center text-slate-500 text-xs">
+        <p>&copy; 2026 Shiba Yadav. Built with Tailwind CSS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
